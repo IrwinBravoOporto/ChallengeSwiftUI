@@ -7,26 +7,20 @@
 
 import SwiftUI
 
-class ViewModel: ObservableObject {
+class ProductViewModel: ObservableObject {
+    @Published var products: [Producto] = []
     
-    @Published var courses: [Course] = []
-    func fetch() {
-        guard let url = URL(string: "https://iosacademy.io/api/v1/courses/index.php") else {return}
+    func fetchProducts() {
+        guard let url = URL(string: "http://alb-dev-ekt-875108740.us-east-1.elb.amazonaws.com/sapp/productos/plp/1/ad2fdd4bbaec4d15aa610a884f02c91a") else { return }
         
         let task = URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data  = data , error == nil else {return}
-            
-            
-            // Convert to JSON
+            guard let data = data, error == nil else { return }
             
             do {
-                
-                let courses = try JSONDecoder().decode([Course].self, from: data)
-                
+                let responseData = try JSONDecoder().decode(ResponseData.self, from: data)
                 DispatchQueue.main.async {
-                    self.courses = courses
+                    self.products = responseData.resultado.productos
                 }
-                
             } catch {
                 print(error)
             }
@@ -34,3 +28,4 @@ class ViewModel: ObservableObject {
         task.resume()
     }
 }
+

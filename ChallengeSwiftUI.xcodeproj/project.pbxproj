@@ -12,6 +12,9 @@
 		41AAACE92A9280ED008C9F65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AAACE82A9280ED008C9F65 /* Assets.xcassets */; };
 		41AAACEC2A9280ED008C9F65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AAACEB2A9280ED008C9F65 /* Preview Assets.xcassets */; };
 		41AAACF32A928B5E008C9F65 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AAACF22A928B5E008C9F65 /* ViewModel.swift */; };
+		41AAACF62A92A88D008C9F65 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AAACF52A92A88D008C9F65 /* ProductDetailView.swift */; };
+		41AAACF82A92A8CB008C9F65 /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AAACF72A92A8CB008C9F65 /* ResponseData.swift */; };
+		41AAACFA2A92A902008C9F65 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AAACF92A92A902008C9F65 /* AsyncImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,10 @@
 		41AAACE82A9280ED008C9F65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41AAACEB2A9280ED008C9F65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		41AAACF22A928B5E008C9F65 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		41AAACF42A92A096008C9F65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		41AAACF52A92A88D008C9F65 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		41AAACF72A92A8CB008C9F65 /* ResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		41AAACF92A92A902008C9F65 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +60,13 @@
 		41AAACE32A9280EA008C9F65 /* ChallengeSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				41AAACF42A92A096008C9F65 /* Info.plist */,
 				41AAACE42A9280EA008C9F65 /* ChallengeSwiftUIApp.swift */,
 				41AAACE62A9280EA008C9F65 /* ContentView.swift */,
+				41AAACF52A92A88D008C9F65 /* ProductDetailView.swift */,
+				41AAACF92A92A902008C9F65 /* AsyncImageView.swift */,
 				41AAACF22A928B5E008C9F65 /* ViewModel.swift */,
+				41AAACF72A92A8CB008C9F65 /* ResponseData.swift */,
 				41AAACE82A9280ED008C9F65 /* Assets.xcassets */,
 				41AAACEA2A9280ED008C9F65 /* Preview Content */,
 			);
@@ -141,8 +152,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				41AAACE72A9280EA008C9F65 /* ContentView.swift in Sources */,
+				41AAACF62A92A88D008C9F65 /* ProductDetailView.swift in Sources */,
+				41AAACF82A92A8CB008C9F65 /* ResponseData.swift in Sources */,
 				41AAACF32A928B5E008C9F65 /* ViewModel.swift in Sources */,
 				41AAACE52A9280EA008C9F65 /* ChallengeSwiftUIApp.swift in Sources */,
+				41AAACFA2A92A902008C9F65 /* AsyncImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +288,7 @@
 				DEVELOPMENT_TEAM = 7UN4YDYUNW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChallengeSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,6 +318,7 @@
 				DEVELOPMENT_TEAM = 7UN4YDYUNW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChallengeSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
